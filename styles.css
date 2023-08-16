@@ -1,0 +1,390 @@
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    scroll-behavior: smooth;
+    height: 100%;
+    background-color: #c5e4e7;
+    display: grid;
+    grid-template-columns: repeat(19, 1fr);
+    grid-template-rows: repeat(19, 1fr);
+}
+
+.mainBox {
+    grid-column: 5/16;
+    grid-row: 5/16;
+    background-color: #ffffff;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+}
+
+.billPart {
+    grid-column: 2/10;
+    grid-row: 3/6;
+}
+
+.peoplePart {
+    grid-column: 2/10;
+    grid-row: 8/11;
+}
+
+.form-label {
+    color: #6e7c7c;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #f3f8fb;
+    text-align: end;
+    background-clip: padding-box;
+    border: none;
+    border-radius: var(--bs-border-radius);
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.input-group-text {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #f3f8fb;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #f3f8fb;
+    border: none;
+    border-radius: none;
+}
+
+
+.tipPart {
+    grid-column: 2/10;
+    grid-row: 12/19;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+}
+
+.tipPart-title {
+    grid-column: 1/5;
+    grid-row: 1/3;
+}
+
+.tipPart-titleText {
+    color: #6e7c7c;
+    font-size: 14px;
+}
+
+.tipPart-button {
+    width: 100%;
+    --bs-btn-color: #e5f0f6;
+    --bs-btn-bg: #00474b;
+    --bs-btn-border-color: #00474b;
+    --bs-btn-hover-color: #024a47;
+    --bs-btn-hover-bg: #9fe8df;
+    --bs-btn-hover-border-color: #9fe8df;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #00474b;
+    --bs-btn-active-bg: #00474b;
+    --bs-btn-active-border-color: #00474b;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.tipPart-firstButton {
+    grid-column: 1/4;
+    grid-row: 3/5;
+}
+
+.tipPart-secondButton {
+    grid-column: 5/8;
+    grid-row: 3/5;
+}
+
+.tipPart-thirdButton {
+    grid-column: 9/12;
+    grid-row: 3/5;
+}
+
+.tipPart-fourthButton {
+    grid-column: 1/4;
+    grid-row: 7/9;
+}
+
+.tipPart-fifthButton {
+    grid-column: 5/8;
+    grid-row: 7/9;
+}
+
+.tipPart-sixthButton {
+    grid-column: 9/12;
+    grid-row: 7/9;
+}
+
+.tipPart-form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #f3f8fb;
+    text-align: center;
+    background-clip: padding-box;
+    border: none;
+    border-radius: var(--bs-border-radius);
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+
+.calcPart {
+    grid-column: 11/20;
+    grid-row: 3/19;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+.tipAmount {
+    grid-column: 3/8;
+    grid-row: 3/5;
+    align-self: center;
+}
+
+.tipAmount-text1 {
+    color: #dff9fa;
+    font-size: 22px;
+}
+
+.tipAmount-text2 {
+    color: #78afb2;
+    font-size: 16px;
+}
+
+.tipAmountNumber {
+    grid-column: 9/11;
+    grid-row: 3/5;
+    align-self: center;
+    color: #23c7ae;
+    font-size: 20px;
+}
+
+.tipAmountNumber-text {
+    color: #23c7ae;
+    font-size: 20px;
+}
+
+.totalAmount {
+    grid-column: 3/8;
+    grid-row: 6/8;
+    align-self: center;
+}
+
+.totalAmount-text1 {
+    color: #dff9fa;
+    font-size: 22px;
+}
+
+.totalAmount-text2 {
+    color: #78afb2;
+    font-size: 16px;
+}
+
+.totalAmountNumber {
+    grid-column: 9/11;
+    grid-row: 6/8;
+    align-self: center;
+    color: #23c7ae;
+    font-size: 20px;
+}
+
+.totalAmountNumber-text {
+    color: #23c7ae;
+    font-size: 20px;
+}
+
+.buttonPart {
+    grid-column: 3/11;
+    grid-row: 10/12;
+    justify-self: center;
+    align-self: center;
+}
+
+.buttonPart-button {
+    --bs-btn-color: #024a47;
+    --bs-btn-bg: #9fe8df;
+    --bs-btn-border-color: #024a47;
+    --bs-btn-hover-color: #024a47;
+    --bs-btn-hover-bg: #9fe8df;
+    --bs-btn-hover-border-color: #9fe8df;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #024a47;
+    --bs-btn-active-bg: #9fe8df;
+    --bs-btn-active-border-color: #024a47;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #19494d;
+    --bs-btn-disabled-bg: #0d686d;
+    --bs-btn-disabled-border-color: #0d686d;
+}
+
+.fixedColor{
+    --bs-btn-color: #024a47 !important;
+    --bs-btn-bg: #9fe8df !important;
+}
+
+@media (min-width: 950px) and (max-width: 1252px) {
+    .tipAmount-text1 {
+        font-size: 16px;
+    }
+    
+    .tipAmount-text2 {
+        font-size: 10px;
+    }
+
+    .tipAmountNumber {
+        font-size: 16px;
+    }
+
+    .tipAmountNumber-text {
+        font-size: 16px;
+    }
+    
+    .totalAmount-text1 {
+        font-size: 16px;
+    }
+    
+    .totalAmount-text2 {
+        font-size: 10px;
+    }
+    
+    .totalAmountNumber-text {
+        font-size: 16px;
+    }
+  }
+  
+  @media (min-width: 540px) and (max-width: 950px) {
+    .mainBox {
+        grid-column: 2/19;
+        grid-row: 5/16;
+        background-color: #ffffff;
+        border-radius: 25px;
+        display: grid;
+        grid-template-columns: repeat(20, 1fr);
+        grid-template-rows: repeat(20, 1fr);
+    }
+    .tipPart-title {
+        grid-column: 1/8;
+        grid-row: 1/3;
+    }
+    .tipAmount-text1 {
+        font-size: 16px;
+    }
+    
+    .tipAmount-text2 {
+        font-size: 10px;
+    }
+
+    .tipAmountNumber {
+        font-size: 16px;
+    }
+
+    .tipAmountNumber-text {
+        font-size: 16px;
+    }
+    
+    .totalAmount-text1 {
+        font-size: 16px;
+    }
+    
+    .totalAmount-text2 {
+        font-size: 10px;
+    }
+
+    .totalAmountNumber-text {
+        font-size: 16px;
+    }
+  }
+  
+  
+  @media (max-width: 540px) {
+    .mainBox {
+        grid-column: 2/19;
+        grid-row: 2/19;
+    }
+
+    .billPart {
+        grid-column: 2/19;
+        grid-row: 2/4;
+    }
+
+    .tipPart {
+        grid-column: 2/19;
+        grid-row: 5/9;
+    }
+
+    .peoplePart {
+        grid-column: 2/19;
+        grid-row: 10/12;
+    }
+
+    .calcPart {
+        grid-column: 2/19;
+        grid-row: 13/20;
+    }
+
+    .tipAmount-text1 {
+        font-size: 14px;
+    }
+    
+    .tipAmount-text2 {
+        font-size: 8px;
+    }
+
+    .tipAmountNumber {
+        font-size: 14px;
+    }
+
+    .tipAmountNumber-text {
+        font-size: 14px;
+    }
+    
+    .totalAmount-text1 {
+        font-size: 14px;
+    }
+    
+    .totalAmount-text2 {
+        font-size: 8px;
+    }
+    
+    .totalAmountNumber-text {
+        font-size: 14px;
+    }
+  }
+
+.attribution {
+    text-align: center;
+    align-self: center;
+    grid-column: 3/18;
+    grid-row: 19/21;
+}
+
+.attributionText{
+    font-size: 10px;
+}
+
+.attribution a {
+    color: hsl(0, 0%, 0%);
+}
+
+
